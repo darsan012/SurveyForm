@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div> 
+        <h1 id="title">Teacher Evaluation Survey Form </h1>
+        <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+        </div>
+
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+
+            <span>Enter your gender</span><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <label for="faculty">Faculty</label><br>
+            <input type="text" id="faculty" name="faculty" placeholder="Enter your faculty" required><br><br>
+
+            <label for="year" id="number-label">Year (optional)</label><br>
+            <input type="number" id="year" name="year" placeholder="Enter your year" min="2000" max="2080"><br><br>
+
+            <label for="techers">Select teacher</label><br>
+            <select name="teachers" id="dropdown" required >
+                <option value="">---------------- </option>
+                <option value="neha">Neha Karna</option>
+                <option value="pcr">Prem Chandra Roy</option>
+                <option value="aks">Anand Kumar Shah</option>
+                <option value="as">Ajay Shrestha</option>
+                <option value="npa">Narayan Prasad Adhikari</option>
+            </select><br><br>
+
+            <span>What are your recommendations?</span><br>
+            <input type="checkbox" id="recom1" name="recom1" value="practical-based">
+            <label for="recom1">Practical based teaching</label><br>
+            <input type="checkbox" id="recom2" name="recom2" value="more-effort">
+            <label for="recom2">Making clear about concepts</label><br>
+            <input type="checkbox" id="recom3" name="recom3" value="interactive">
+            <label for="recom3">Being more interactive to students</label><br>
+            <input type="checkbox" id="recom4" name="recom4" value="responsive">
+            <label for="recom4">Being more responsive to weak students</label><br><br>
+
+            <span>Any comments or suggestions?</span><br>   
+            <textarea name="data" id="textarea" cols="90" rows="10" placeholder="Enter your comment here...."></textarea>
+            <br><br>
+            <input type="submit" value="Submit" id="submit"> 
+
+        </form>
+    </main>
+    
+</body>
+</html>
